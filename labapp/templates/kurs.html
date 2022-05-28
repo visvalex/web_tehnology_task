@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+            <section class="courses">
+               
+                   
+                       <article class="courses__column  one">
+                            <div class="title-one"> На наших курсах</div>
+                           <div class="row-box">
+                            <div class="box">
+                                <a href="#" class="books"> <img src="/static/images/book.png" alt=""> </a>
+                                <div class="text-box"> Lorem Ipsum - это текст-"рыба", часто используемый в печати.</div>
+                            </div>
+                            <div class="box">
+                                <a href="#" class="books"> <img src="/static/images/book.png" alt=""> </a>
+                                <div class="text-box"> Lorem Ipsum - это текст-"рыба", часто используемый в печати.</div>
+                            </div>
+                            </div>
+                            <div class="row-box">
+                            <div class="box">
+                                <a href="#" class="books"> <img src="/static/images/book.png" alt=""> </a>
+                                <div class="text-box"> Lorem Ipsum - это текст-"рыба", часто используемый в печати.</div>
+                            </div>
+                            <div class="box">
+                                <a href="#" class="books"> <img src="/static/images/book.png" alt=""> </a>
+                                <div class="text-box"> Lorem Ipsum - это текст-"рыба", часто используемый в печати.</div>
+                            </div>
+                          </div>
+                       </article>
+                       <article class="courses__column  two">
+                           <div class="title"> Полезные статьи</div>
+                           <div class="info"> 5 причин почему вам нужно прийти к нам</div>
+                           <div class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint et est autem, molestias in expedita, alias culpa rem, corporis consequatur nihil impedit.</div>
+                           <a href="#" class="btn">Подробнее</a>
+                       </article>
+                    
+                
+             
+                
+            </section>
+
+            <div class="inter-email">
+                 <aside>
+                        <p id="statusfield"></p>
+                     </aside>
+                <div class="inter-email  field">
+
+                    <form id="contactform" onsubmit="formSubmit(this)">
+                         <div class="title-email"> Запишитесь на курс!</div>
+                           <div class="info-email"> Увлекательные задания, прекрасная атмосфера доброты и душевного спокойствия здесь у нас!</div>
+                            <div class="data-email">
+                                <input type="text" placeholder="Введите ваше имя" name="fname">
+                                <input type="text" placeholder="Введите вашу фамилию" name="lname">
+                                <input type="email" placeholder="Введите ваш e-mai" name="email">
+
+                                <input type="submit" id="sendbtnkurs" value="Отправить">
+                                 <input type="button" id="get" value="Запросы">
+                           </div>
+                        </form>		      
+                </div>
+            </div>
+
+           <script type="text/javascript" src="/static/javascripts/formsend.js"></script>
+
+       
+{% endblock %}

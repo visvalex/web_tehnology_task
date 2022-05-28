@@ -1,0 +1,833 @@
+body {
+    font-family: Tahoma, 'Segoe UI', Geneva, Roboto, Oswald, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 500 ;
+    color: #000000;
+    max-width: 1920px;
+
+
+}
+a {
+font-size:16px;
+text-decoration: none;
+ /*убираем подчеркивание текста ссылок*/
+ }
+
+   /* .wrapper{
+        background-color:rgb(253, 243, 238);
+        }*/
+
+header{
+ background-color:rgb(253, 243, 238);
+   height: 100px;
+    display: flex;
+    align-items: center;
+}
+    .header__logo{
+    margin: 23px 318px;
+    position:absolute;
+    width: 93px;
+    height: 76px;
+    left: 0;
+    top: 0;
+    }
+    nav{
+        margin-left: auto;
+    margin-right: 10px;
+ display: flex;
+    }
+   .menu_conteiner{
+
+   display: flex;
+    /*margin: 42px 682px;/
+    padding: 42px 0px 13px 682px;
+    list-style: none;*/
+    flex-wrap: wrap;
+   display: flex;
+    }
+
+.menu__item{
+    display: flex;
+
+
+}
+.menu__item:not(:last-child){
+    margin: 0px 54px 0px 0px;
+
+}
+.menu__link{
+    text-decoration: none;
+    color: black;
+}
+    .heading{
+        position: relative;
+        left: 60px;
+    }
+/*блок с курсами */
+
+.courses{
+    background-color:rgba(113, 99, 98, 0.2);
+    height: 596px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.courses__items{
+    display: flex;
+    flex-direction: row;
+}
+.one{
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    width: 510px;
+    height: 366px;
+    background-color: EFEFEF;
+    margin: 15px;
+
+    border-style: solid;
+    border-width: 15px;
+    border-color: white;
+}
+.title-one{
+
+
+    height: 36px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    width: 410px;
+height: 36px;
+
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 44px;
+text-align: center;
+text-transform: uppercase;
+
+color: #282828;
+}
+.row-box {
+
+    width: 510px;
+    height: 261px;
+     display: flex;
+
+     justify-content: left;
+
+
+
+}
+.box{
+ display: flex;
+  height: 100px;
+}
+
+
+.books{
+
+    width: 77px;
+    height: 79px;
+
+}
+.books:not(:last-child){
+    margin: 0px 0px 0px 17px;
+
+}
+.text-box{
+    height: 80px;
+    width: 130px;
+    margin-left: 21px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+color: #282828;
+}
+
+.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 540px;
+    height: 396px;
+    background-image: url('/static/images/foto.jpg');
+    margin: 15px;
+
+}
+
+.title{
+
+    width: 410px;
+    height: 22px;
+    margin-top: 60px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.info{
+    width: 410px;
+height: 80px;
+margin: 20px;
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 44px;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.text{
+    width: 410px;
+    height: 53px;
+    margin: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+.btn{
+
+    width: 108px;
+    height: 41px;
+    margin-top: 15px;
+    background: rgba(113, 99, 98, 1);
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Oswald;
+    text-decoration: none;
+}
+
+.inter-email{
+    background-image: url('/static/images/hands.jpg');
+    height: 578px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#statusfield{
+font-size:14px;
+}
+.field{
+    background-color: white;
+    width: 540px;
+    height: 390px;
+
+    background-image: url('/static/images/whitee.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contactform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.title-email{
+    width: 350px;
+    height: 22px;
+
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #131313;
+    margin-top: 60px 0 0 0;
+}
+.info-email{
+    width: 410px;
+    height: 32px;
+
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #2D2D2D;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.data-email{
+    margin-top: 38px;
+    display:flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    width: 223px;
+    height: 36px;
+    /*display: inline-block;*/
+    border: none;
+    background: #f1f1f1;
+    margin: 10px;
+  }
+
+  input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  input[type=email] {
+    width: 223px;
+    height: 36px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    margin: 10px;
+  }
+
+  input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+
+    input[type="submit"]{
+        width: 128px;
+        height: 38px;
+
+        background: #C2AF77;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+        font-family: 'Philosopher';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 10px;
+
+    }
+    .footer{
+        background-color: #716362;
+        height: 75px;
+
+    }
+    .menu_conteiner li.active{
+        background:rgb(218, 206, 200);
+
+    }
+    .menu_conteiner li{
+        background:  rgb(253, 243, 238)
+    }
+
+/*ГЛАВНАЯ*/
+ .banner-school{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top:  100px;
+        height: 739px;
+        background: rgba(113, 99, 98, 0.2);
+    }
+
+    .banner-main{
+    height:494px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00000046;
+    background-image: url('/static/images/image8.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+padding-top:  100px;
+padding-bottom: 100px;
+color: #FFFFFF;
+}
+    .title-school{
+        position: relative;
+        left: 130px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        color: #3D3D3D;
+    }
+.title-main{
+width: 920px;
+height: 280px;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+left: 200px;
+
+/* or 318% */
+padding: 60px 0px 0px 240px;
+}
+.icon_contener-main{
+    position: relative;
+    bottom: 100px;
+  left: 125px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.icon-title{
+
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 150%;
+/* or 27px */
+
+text-align: center;
+text-transform: uppercase;
+}
+.icon-01{
+    width: 107px;
+
+}
+.icon-02{
+    width: 113px;
+
+}
+.icon-03{
+    width: 116px;
+
+}
+.icon-04.coff{
+
+    width: 97px;
+
+}
+.icon-title-04{
+    width: 150px;
+
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 27px */
+
+    text-align: center;
+    text-transform: uppercase;
+}
+.dernier{
+ background-color:rgb(253, 243, 238);
+    padding-top:  100px;
+padding-bottom: 100px;
+}
+.img_contener-main{
+    position: relative;
+  left: 90px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.ok{
+
+width: 70px;
+height: 70px;
+
+}
+.h2-main{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+}
+.h3-main{
+width: 189px;
+height: 20px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+/*font-size: 21px;
+line-height: 26px;*/
+font-size: 20px;
+line-height: 20px;
+color: #4F5877;
+}
+.p-main{
+    width: 255px;
+height: 82px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+
+color: #4F5877;
+}
+
+/*school///////////////////////////////////////////////*/
+.block_contener-school{
+
+        position: relative;
+        top: 18px;
+        left: 60px;
+        display: grid;
+        grid-template-columns: repeat(3,490px);
+
+        font-family: Roboto;
+        font-style: normal;
+    }
+       .block-01{
+
+        width: 445px;
+        height: 475px;
+    }
+         .block-02{
+
+        width: 445px;
+        height: 475px;
+    }
+         .block-03{
+
+        width: 445px;
+        height: 475px;
+    }
+
+    .block-title-school{
+
+        width: 155px;
+        height: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #1D2A38;
+    }
+     .block-text-school{
+
+     width: 350px;
+     height: 80px;
+     font-weight: 500;
+     font-size: 22px;
+     line-height: 140%;
+     color: #3D3D3D;
+    }
+
+.block-textmain-school{
+    width: 380px;
+    height: 155px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    color: #262626;
+    }
+    .block-textlast-school{
+     width: 70px;
+     height: 13px;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 140%;
+     color: #3D3D3D;
+    }
+        .dernier-school{
+        padding-top:  100px;
+        padding-bottom:  100px;
+        }
+
+        .derntitle{
+        position: relative;
+        left: 150px;
+        bottom: 50px;
+        width: 255px;
+        height: 26.66px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        color: #010B0F;
+
+    }
+    .img_contener-school{
+        position: relative;
+        left: 150px;
+          display: grid;
+          grid-template-columns: repeat(4,300px);
+    }
+    .img-school{
+        width: 255px;
+        height: 526.26px;
+        background: #F5F5F5;
+    }
+    .img-title-school{
+        position: relative;
+        left: 60px;
+        width: 149px;
+        height: 46.41px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        /* or 27px */
+        color: #444444;
+    }
+
+    .img-text-school{
+        position: relative;
+        top: 10px;
+        left: 60px;
+        width: 155px;
+        height: 36.53px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #444444;
+    }
+
+    /*СТУДЕНТАМ*/
+
+    .content-students {
+	/*position: absolute;*
+	/top: 155px;
+  padding: 0;
+	margin: 0;
+	border: 0;
+  background: #D1CFCF;*/
+}
+.events {
+	/*margin-top: 19%;
+	padding-bottom: 75px;
+	/*position: absolute;*/
+ /*height:290px;*/
+  background: #FFFFFF;
+   display: flex;
+   flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.zagolovok{
+	width: 100%;
+	text-align: center;
+	/*position: absolute;*/
+	font-family: sans-serif;
+	font-stretch: ultra-condensed;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 140%;
+color: #000000;
+	z-index: 500;
+	margin-bottom:10px;
+}
+.newcontainer{
+	/*position: absolute;*/
+	display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin:0 30px 30px 30px;
+}
+
+.some{
+	/*position: absolute;*/
+
+	/*margin-left: 3%;
+width: 46%;
+height: 68%;
+top: 50%;*/
+ display: flex;
+    flex-direction: row;
+  /* transform: translate(0, -50%);*/
+background: #F5F5F5;
+aspect-ratio: 16 / 9;
+margin:10px;
+}
+.some1{
+	/*position: absolute;*
+	right: 3%;
+width: 46%;
+height: 68%;
+top: 50%;*/
+ display: flex;
+    flex-direction: row;
+  /* transform: translate(0, -50%);*/
+background: #F5F5F5;
+aspect-ratio: 16 / 9;
+margin:10px;
+}
+.description{
+	font-family: Montserrat;
+	font-style: normal;
+	/*position: absolute;*/
+	font-weight: 500;
+font-size: 24px;
+line-height: 70%;
+	right: 0;
+	width: 50%;
+	margin:20px;
+	display: flex;
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+
+}
+.illustration{
+	/*position: absolute;*/
+	/*height: 96%;
+	top: 4%;
+
+  /* transform: translate(0, -2%);*/
+	/*left: 1%;*/
+	/*width:350px;
+	height:350px*/
+	margin:20px;
+}
+.h2-school{
+
+	width: 100%;
+	/*position: absolute;*/
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color: #000000;
+}
+.p-school{
+
+	width: 100%;
+	/*position: absolute;*/
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 14px;
+	color: #000000;
+}
+.enter{
+    background-image: url('/static/images/авторизация.jpg');
+    height:750px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.field2{
+    background-color: rgba(253, 243, 238, 0.837);;
+    width: 540px;
+    height: 390px;
+
+    background-image: url('/static/images/whitee.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.field3{
+   background-color: rgba(253, 243, 238, 0.837);;
+    width: 540px;
+    height: 390px;
+
+    background-image: url('/static/images/whitee.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#authorization{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.title-emaill{
+    width: 350px;
+    height: 22px;
+
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #131313;
+    margin-top: 60px 0 0 0;
+}
+
+.data-email{
+    margin-top: 38px;
+    display:flex;
+    flex-direction: column;
+}
+input[type=password] {
+    width: 223px;
+    height: 36px;
+    /*display: inline-block;*/
+    border: none;
+    background: #f1f1f1;
+    margin: 10px;
+  }
+   input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .registration{
+    background-image: url('/static/images/pexelsnew.jpg');
+    height:750px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+       width: 100px;
+        height: 38px;
+
+        background: #c2af7753;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+        font-family: 'Philosopher';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 10px;
+
+    }

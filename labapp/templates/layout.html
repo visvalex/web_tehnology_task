@@ -1,0 +1,48 @@
+<html>
+
+<head>
+		    <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <title>{{title}}</title>
+	      <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/static/stylesheets/styles.css">
+		<script type="text/javascript" src="/static/javascripts/jquery-3.6.0.min.js"></script>
+</head>
+		<body>
+			<div class="wrapper">
+				<header>
+					<div class="header__logo">
+						<img src="/static/images/icon.jpg" alt="">
+					</div>
+
+					<div class="heading">
+						<h1 id="headname">{{pname}}</h1>
+					</div>
+
+				  {% if navmenu %}
+					<nav>
+						<ul class="menu_conteiner">
+							{% for item in navmenu %}
+								<li class="menu__item"><a href="{{item.addr}}" class="menu__link">{{item.name}}</a></li>
+							{% endfor %}
+						</ul>
+					</nav>
+
+				{% endif %}
+					</header>
+				<main id="{{pname}}">
+					{% block content %}{% endblock %}
+				</main>
+
+					<footer>
+						<div class="footer">
+							  Я подвал
+						</div>
+					</footer>
+			</div>
+			<script type="text/javascript" src="/static/javascripts/topmenu.js"></script>
+			<script type="text/javascript" src="/static/javascripts/jqfunc.js"></script>
+		</body>
+</html>

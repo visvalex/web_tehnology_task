@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="enter">
+                    <div class="enter  field2">
+                        <form id="authorization" method="POST" action="/login">
+                             <div class="title-emaill"> Авторизация</div>
+
+                                <div class="data-email">
+                                    <input type="text" placeholder="Введите ваше имя" name="loginField">
+                                    <input type="password" placeholder="Введите ваш пароль" name="passField">
+                                    <button type="submit" id="sendbtn">Войти</button>
+                                     <button type="submit" id="sendbtn" name="regBtn" value="true">Регистрация</button>
+                               </div>
+                            </form>
+                    </div>
+                </div>
+{% endblock %}
